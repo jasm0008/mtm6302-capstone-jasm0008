@@ -1,4 +1,4 @@
-# mtm6302-capstone-your-github-username
+# mtm6302-capstone-jasm0008
 
 Student Name: Kevin Jasmin
 Student Number: 040956879
