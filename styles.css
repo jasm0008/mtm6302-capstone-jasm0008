@@ -1,13 +1,7 @@
-
-
-
-
-
-
 /* START OF STYLING CODING */
-
-
-
+html{
+font-family: sans-serif;
+}
 
 
 /* MISC CODING */
@@ -24,6 +18,46 @@
     position: absolute;
     left: 80%;
 }
+
+
+
+
+
+.quiz-select{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-select-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    grid-gap: 10px;
+    height: 10vh;
+    font-size: x-large;
+    text-align: center;
+
+
+}
+
+.option{   
+    padding: 10px;
+    width: 20vh;
+    height: 100px;
+    gap: 10px;
+    font-size: large;
+    background-color: #4fb553;
+    border-radius: 25%;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+
+
+
+
 /* END OF MISC CODING */
 
 
