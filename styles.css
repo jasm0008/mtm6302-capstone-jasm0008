@@ -11,20 +11,21 @@ font-family: sans-serif;
 }
 
 .darkmode{
-    background-color: white;
-    color: #4fb553;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #3a3a3a ;
     /* this code centers the button */
     margin: 0;
     position: absolute;
     left: 80%;
+    top: 150px;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
 }
 
-
-
-
-
 .quiz-select{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +36,7 @@ font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: end;
-    grid-gap: 10px;
+    grid-gap:100px;
     height: 10vh;
     font-size: x-large;
     text-align: center;
@@ -50,8 +51,9 @@ font-family: sans-serif;
     gap: 10px;
     font-size: large;
     background-color: #4fb553;
-    border-radius: 25%;
-    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    border-radius: 20px;
+
+    border-color: #4fb553;
 }
 
 
