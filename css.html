@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Quiz</title>
+
+    <style>
+        /* THIS IS LINKED WITH DARK MODE */
+        .dark{
+            background-color: #3a3a3a;
+            color: #4fb553;
+        }
+    </style>
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <main>
+        <button class ="homebtn" onclick="window.location.href='index.html';" >Home</button> 
+        
+        <!-- DARK MODE SECTION -->
+        <button class ="darkmode" onclick="myFunction()">DARK</button> 
+
+        <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark");
+            }
+        </script>
+    
+        <script src="script.js"></script>
+
+    </main>
+    
+
+    <div class="quiz-select">
+
+        
+
+        <h1 class="title">LEARNING QUIZ</h1>
+
+        <h1>JavaScript Quiz</h1>
+        <p>Answer the following questions:</p>
+
+        <button onclick="displayRandomQuestion()">Get Random Question</button>
+
+
+
+
+
+            <p id="question"></p>
+            <input type="text" id="cssanswer1"><br>
+
+        <button onclick="checkAnswers()">Submit</button>
+        <p id="result"></p>
+
+
+    </div>
+        
+ 
+
+
+</body>
+</html>
