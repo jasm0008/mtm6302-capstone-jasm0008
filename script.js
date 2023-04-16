@@ -48,24 +48,63 @@ const questions = [
       }
   ];
   
-  function displayRandomQuestion() {
-    const questionElement = document.getElementById("question");
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    const randomQuestion = questions[randomIndex];
-    questionElement.textContent = randomQuestion.question;
+//   function displayRandomQuestion() {
+//     const questionElement = document.getElementById("question");
+//     const randomIndex = Math.floor(Math.random() * questions.length);
+//     const randomQuestion = questions[randomIndex];
+//     questionElement.textContent = randomQuestion.question;
   
-    const answerInput = document.getElementById("answer");
-    answerInput.value = ""; // clear previous answer
+//     const answerInput = document.getElementById("answer");
+//     answerInput.value = ""; // clear previous answer
   
-    const submitButton = document.getElementById("submit");
-    submitButton.onclick = function() {
-      const userAnswer = answerInput.value.toLowerCase();
-      const correctAnswer = randomQuestion.answer.toLowerCase();
-      const feedbackElement = document.getElementById("feedback");
-      if (userAnswer === correctAnswer) {
-        feedbackElement.textContent = "Correct!";
-      } else {
-        feedbackElement.textContent = "Incorrect. The correct answer is " + correctAnswer + ".";
-      }
+//     const submitButton = document.getElementById("submit");
+//     submitButton.onclick = function() {
+//       const userAnswer = answerInput.value.toLowerCase();
+//       const correctAnswer = randomQuestion.answer.toLowerCase();
+//       const feedbackElement = document.getElementById("feedback");
+//       if (userAnswer === correctAnswer) {
+//         feedbackElement.textContent = "Correct!";
+//       } else {
+//         feedbackElement.textContent = "Incorrect. The correct answer is " + correctAnswer + ".";
+//       }
+//     }
+//   }
+
+
+let numCorrect = 0;
+let numIncorrect = 0;
+
+function displayRandomQuestion() {
+  const questionElement = document.getElementById("question");
+  const randomIndex = Math.floor(Math.random() * questions.length);
+  const randomQuestion = questions[randomIndex];
+  questionElement.textContent = randomQuestion.question;
+
+  const answerInput = document.getElementById("answer");
+  answerInput.value = ""; // clear previous answer
+
+  const submitButton = document.getElementById("submit");
+  submitButton.onclick = function() {
+    const userAnswer = answerInput.value.toLowerCase();
+    const correctAnswer = randomQuestion.answer.toLowerCase();
+    const feedbackElement = document.getElementById("feedback");
+    if (userAnswer === correctAnswer) {
+      numCorrect++;
+      feedbackElement.textContent = "Correct!";
+    } else {
+      numIncorrect++;
+      feedbackElement.textContent = "Incorrect. The correct answer is " + correctAnswer + ".";
     }
+    updateScore();
+    displayRandomQuestion();
   }
+}
+
+function updateScore() {
+  const correctElement = document.getElementById("num-correct");
+  correctElement.textContent = numCorrect;
+  const incorrectElement = document.getElementById("num-incorrect");
+  incorrectElement.textContent = numIncorrect;
+}
+
+displayRandomQuestion();

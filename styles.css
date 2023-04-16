@@ -92,7 +92,7 @@ input[type=text] {
     color: white;
   }
 
-  input[type=button], input[type=submit], input[type=reset] {
+  /* input[type=button], input[type=submit], input[type=reset] {
     background-color: #4fb553;
     border: none;
     color: white;
@@ -100,7 +100,7 @@ input[type=text] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-  }
+  } */
 
 
   button {
