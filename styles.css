@@ -1,6 +1,7 @@
 /* START OF STYLING CODING */
 html{
 font-family: sans-serif;
+color: #4fb553;
 }
 
 
@@ -9,6 +10,11 @@ font-family: sans-serif;
 .title{
     text-align: center;
 }
+
+/* .dark{
+  width: 100%;
+  height: 1920px;
+} */
 
 .darkmode{
     background-color: #3a3a3a;
