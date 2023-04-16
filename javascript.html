@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Quiz</title>
+
+    <style>
+        /* THIS IS LINKED WITH DARK MODE */
+        .dark{
+            background-color: #3a3a3a;
+            color: #4fb553;
+        }
+    </style>
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <main>
+
+        <!-- DARK MODE SECTION -->
+        <button class ="darkmode" onclick="myFunction()">DARK</button> 
+
+        <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark");
+            }
+        </script>
+    
+        <script src="script.js"></script>
+
+    </main>
+    
+
+    <div class="quiz-select">
+
+        <h1 class="title">LEARNING QUIZ</h1>
+        <h3 class="title">Please select any of the following</h3>
+
+        <div class="quiz-select-container" id="quiz-select-container">
+
+            <button onclick="window.location.href='javascript.html';" class="option" onclick="" id="op1" >JavaScript</button> 
+     
+            <button onclick="window.location.href='php.html';" class="option" id="op2" >PHP</button>
+     
+            <button onclick="window.location.href='html.html';" class="option" id="op3">HTML</button>
+     
+            <button onclick="window.location.href='css.html';" class="option" id="op4">CSS</button>
+
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
