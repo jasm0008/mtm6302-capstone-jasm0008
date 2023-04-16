@@ -44,19 +44,23 @@
         <h1 class="title">LEARNING QUIZ</h1>
         <h3 class="title">Please select any of the following</h3>
 
-        <div class="quiz-select-container" id="quiz-select-container">
 
-            <button onclick="window.location.href='javascript.html';" class="option" onclick="" id="op1" >JavaScript</button> 
-     
-            <button onclick="window.location.href='php.html';" class="option" id="op2" >PHP</button>
-     
-            <button onclick="window.location.href='html.html';" class="option" id="op3">HTML</button>
-     
-            <button onclick="window.location.href='css.html';" class="option" id="op4">CSS</button>
+            <h1>JavaScript Quiz</h1>
+            <p>Answer the following questions:</p>
+            <ol>
+                <li>What programming language is used for web browsers?</li>
+                <input type="text" id="answer1"><br>
+                <li>In what rank is JavaScript, the most popular language in the world</li>
+                <input type="text" id="answer2"><br>
+                <li>What function is used to output information to the console?</li>
+                <input type="text" id="answer3"><br>
+            </ol>
+            <button onclick="checkAnswers()">Submit</button>
+            <p id="result"></p>
 
-        </div>
-        
     </div>
+        
+ 
 
 
 </body>
