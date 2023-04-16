@@ -1,3 +1,5 @@
+// JAVACRIPT QUIZ PAGE
+
 function checkAnswers() {
     // Get the user's answers
     var answer1 = document.getElementById("answer1").value;
@@ -20,3 +22,5 @@ function checkAnswers() {
     var result = document.getElementById("result");
     result.innerHTML = "You got " + correctAnswers + " out of 3 correct.";
 } 
+
+// CSS QUIZ PAGE

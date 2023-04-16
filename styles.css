@@ -20,8 +20,20 @@ font-family: sans-serif;
     left: 80%;
     top: 150px;
     width: 70px;
-    height: 30px;
     border-radius: 20px;
+}
+
+.homebtn {
+
+    justify-content: center;
+    align-items: center;
+
+        background-color: #3a3a3a;
+        color: #ffffff;
+        border-color: #3a3a3a;
+        margin: 0;
+        width: 70px;
+        border-radius: 20px;
 }
 
 .quiz-select{
