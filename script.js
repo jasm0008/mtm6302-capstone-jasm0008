@@ -1,3 +1,8 @@
+
+
+
+
+
 // JAVACRIPT QUIZ PAGE
 
 function checkAnswers() {
@@ -22,6 +27,7 @@ function checkAnswers() {
     let result = document.getElementById("result");
     result.innerHTML = "You got " + correctAnswers + " out of 3 correct.";
 } 
+
 
 
 
@@ -94,6 +100,13 @@ function updateScore() {
 displayRandomQuestion();
 
 
+
+
+
+
+
+
+
 //   PHP QUIZ PAGE
 function phpcheckAnswers() {
     // Get the user's answers
@@ -124,17 +137,8 @@ function phpcheckAnswers() {
 
 
 
-
-
-
-
-
-
   
-
-
-
-
+//   HTML QUIZ PAGE
 
 const htmlquestions = [
     {
