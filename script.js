@@ -59,8 +59,6 @@ const questions = [
   ];
 
 
-
-
 let numCorrect = 0;
 let numIncorrect = 0;
 
@@ -130,10 +128,6 @@ function phpcheckAnswers() {
     let phpresult = document.getElementById("phpresult");
     phpresult.innerHTML = "You got " + phpcorrectAnswers + " out of 3 correct.";
 } 
-
-
-
-
 
 
 
