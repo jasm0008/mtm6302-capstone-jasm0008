@@ -2,12 +2,12 @@
 
 function checkAnswers() {
     // Get the user's answers
-    var answer1 = document.getElementById("answer1").value;
-    var answer2 = document.getElementById("answer2").value;
-    var answer3 = document.getElementById("answer3").value;
+    const answer1 = document.getElementById("answer1").value;
+    const answer2 = document.getElementById("answer2").value;
+    const answer3 = document.getElementById("answer3").value;
 
     // Check the answers
-    var correctAnswers = 0;
+    let correctAnswers = 0;
     if (answer1.toLowerCase() == "javascript") {
         correctAnswers++;
     }
@@ -19,7 +19,7 @@ function checkAnswers() {
     }
 
     // Display the results
-    var result = document.getElementById("result");
+    let result = document.getElementById("result");
     result.innerHTML = "You got " + correctAnswers + " out of 3 correct.";
 } 
 
@@ -109,24 +109,24 @@ displayRandomQuestion();
 //   PHP QUIZ PAGE
 function phpcheckAnswers() {
     // Get the user's answers
-    var phpanswer1 = document.getElementById("phpanswer1").value;
-    var phpanswer2 = document.getElementById("phpanswer2").value;
-    var phpanswer3 = document.getElementById("phpanswer3").value;
+    const phpanswer1 = document.getElementById("phpanswer1").value;
+    const phpanswer2 = document.getElementById("phpanswer2").value;
+    const phpanswer3 = document.getElementById("phpanswer3").value;
 
     // Check the answers
-    var phpcorrectAnswers = 0;
-    if (phpanswer1.toLowerCase() == "Hypertext Preprocessor") {
+    let phpcorrectAnswers = 0;
+    if (phpanswer1.toLowerCase() == "hypertext preprocessor") {
         phpcorrectAnswers++;
     }
-    if (phpanswer2.toLowerCase() == "Rasmus Lerdorf") {
+    if (phpanswer2.toLowerCase() == "rasmus lerdorf") {
         phpcorrectAnswers++;
     }
-    if (phpanswer3.toLowerCase() == "True") {
+    if (phpanswer3.toLowerCase() == "true") {
         phpcorrectAnswers++;
     }
 
     // Display the results
-    var phpresult = document.getElementById("phpresult");
+    let phpresult = document.getElementById("phpresult");
     phpresult.innerHTML = "You got " + phpcorrectAnswers + " out of 3 correct.";
 } 
   
