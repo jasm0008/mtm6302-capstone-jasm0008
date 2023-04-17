@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Quiz</title>
+
+    <style>
+        /* THIS IS LINKED WITH DARK MODE */
+        .dark{
+            background-color: #3a3a3a;
+            color: #4fb553;
+        }
+    </style>
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <main>
+        <button class ="homebtn" onclick="window.location.href='index.html';" >Home</button> 
+        
+        <!-- DARK MODE SECTION -->
+        <button class ="darkmode" onclick="myFunction()">DARK</button> 
+
+        <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark");
+            }
+        </script>
+    
+        <script src="script.js"></script>
+
+    </main>
+    
+
+    <div class="quiz-select">
+
+        <h1 class="title">LEARNING QUIZ</h1>
+
+
+            <h1>PHP Quiz</h1>
+            <p>Answer the following questions:</p>
+            <ol>
+                <li>In other words what is PHP?</li>
+                <input type="text" id="phpanswer1"><br>
+                <li>What is php developer name?</li>
+                <input type="text" id="phpanswer2"><br>
+                <li>Is PHP a Server-Side Scripting Language? True or False?</li>
+                <input type="text" id="phpanswer3"><br>
+            </ol>
+            <button onclick="phpcheckAnswers()">Submit</button>
+            <p id="phpresult"></p>
+
+    </div>
+        
+ 
+
+
+</body>
+</html>

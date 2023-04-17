@@ -23,6 +23,10 @@ function checkAnswers() {
     result.innerHTML = "You got " + correctAnswers + " out of 3 correct.";
 } 
 
+
+
+
+
 // CSS QUIZ PAGE
 
 const questions = [
@@ -45,9 +49,11 @@ const questions = [
       {
         question: "What is W3C?",
         answer: "World Wide Web Consortium"
-      }
+      },
   ];
-  
+
+
+
 
 let numCorrect = 0;
 let numIncorrect = 0;
@@ -86,3 +92,79 @@ function updateScore() {
 }
 
 displayRandomQuestion();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   PHP QUIZ PAGE
+function phpcheckAnswers() {
+    // Get the user's answers
+    var phpanswer1 = document.getElementById("phpanswer1").value;
+    var phpanswer2 = document.getElementById("phpanswer2").value;
+    var phpanswer3 = document.getElementById("phpanswer3").value;
+
+    // Check the answers
+    var phpcorrectAnswers = 0;
+    if (phpanswer1.toLowerCase() == "Hypertext Preprocessor") {
+        phpcorrectAnswers++;
+    }
+    if (phpanswer2.toLowerCase() == "Rasmus Lerdorf") {
+        phpcorrectAnswers++;
+    }
+    if (phpanswer3.toLowerCase() == "True") {
+        phpcorrectAnswers++;
+    }
+
+    // Display the results
+    var phpresult = document.getElementById("phpresult");
+    phpresult.innerHTML = "You got " + phpcorrectAnswers + " out of 3 correct.";
+} 
+  
+//   let numPHPCorrect = 0;
+// let numPHPIncorrect = 0;
+
+// function displayRandomphpQuestion() {
+//   const questionElement = document.getElementById("phpquestion");
+//   const randomIndex = Math.floor(Math.random() * questions.length);
+//   const randomphpQuestion = questions[randomIndex];
+//   questionElement.textContent = randomphpQuestion.question;
+
+//   const answerInput = document.getElementById("phpanswer");
+//   answerInput.value = ""; // clear previous answer
+
+//   const submitButton = document.getElementById("phpsubmit");
+//   submitButton.onclick = function() {
+//     const userAnswer = answerInput.value.toLowerCase();
+//     const correctAnswer = randomphpQuestion.answer.toLowerCase();
+//     const feedbackElement = document.getElementById("phpfeedback");
+//     if (userAnswer === correctAnswer) {
+//       numCorrect++;
+//       feedbackElement.textContent = "Correct!";
+//     } else {
+//       numIncorrect++;
+//       feedbackElement.textContent = "Incorrect. The correct answer is " + correctAnswer + ".";
+//     }
+//     updateScore();
+//     displayRandomphpQuestion();
+//   }
+// }
+
+// function updateScore() {
+//   const correctElement = document.getElementById("num-correct");
+//   correctElement.textContent = numCorrect;
+//   const incorrectElement = document.getElementById("num-incorrect");
+//   incorrectElement.textContent = numIncorrect;
+// }
+
+// displayRandomQuestion();
+
